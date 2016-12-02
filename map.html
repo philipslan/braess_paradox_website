@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Map of New York</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="http://bootswatch.com/lumen/bootstrap.min.css">
+    <style>
+        /* Always set the map height explicitly to define the size of the div
+        * element that contains the map. */
+        #map {
+            height: 100%;
+        }
+        /* Optional: Makes the sample page fill the window. */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        input {
+            position: absolute;
+            top: 10px;
+            left: 47%;
+            z-index: 5;
+        }
+    </style>
+</head>
+<body>
+    <input onclick="resetMap();" type=button value="Reset View" class="btn btn-primary">
+    <div id="map"></div>
+</body>
+<script type="text/javascript" src="js/zeroPoints.js"></script>
+<script type="text/javascript" src="js/initMap.js"></script>
+<script type="text/javascript" 
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkwnbZWLiSj3_CtiBYDlPGy4Xwz73zwr8&libraries=drawing&callback=initMap"
+    async defer></script>
+</html>
